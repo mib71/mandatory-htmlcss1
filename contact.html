@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Min sida</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>Kontakt</h1>
+      <nav>
+        <ul class="ul">
+          <li class="li"><a href="index.html">Hem</a></li>
+          <li class="li"><a href="about.html" target="_self">Om sidan</a></li>
+          <li class="li">
+            <a href="movies.html" target="_self">Favoritfilmer</a>
+          </li>
+          <li class="li"><a href="links.html" target="_self">Länkar</a></li>
+          <li class="li">
+            <a class="active" href="contact.html" target="_self">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h4>Kontaktformulär</h4>
+
+      <form action="">
+        <!-- namn -->
+        <label for="namn">*Namn:</label>
+        <input
+          type="text"
+          namn="namn"
+          id="namn"
+          placeholder="Förnamn Efternamn"
+          required
+        />
+        <br />
+        <br />
+        <!-- email -->
+        <label for="email">*Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="min@email.com"
+          required
+        />
+        <br />
+        <!-- dc eller marvel -->
+        <p>DC eller Marvel?</p>
+        <select>
+          <option value="dc">DC</option>
+          <option value="marvel">Marvel</option>
+        </select>
+        <!-- fritext -->
+        <p>Meddelande:</p>
+        <textarea
+          name="meddelande"
+          id="meddelande"
+          cols="30"
+          rows="10"
+          placeholder="Meddelande text"
+        ></textarea>
+        <br /><button type="submit">Skicka</button>
+        <p>* Krävs</p>
+      </form>
+    </main>
+    <footer class="container">
+      <p>contact: <a href="mailto:webmaster@example.com">MiB</a></p>
+    </footer>
+  </body>
+</html>
